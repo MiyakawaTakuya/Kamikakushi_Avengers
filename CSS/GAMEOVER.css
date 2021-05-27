@@ -1,0 +1,53 @@
+.body {
+    background-color: #011230;
+    display: flex;
+    justify-content: center;
+}
+
+
+.main {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 80px;
+  letter-spacing: 0.3em;
+  z-index: 1;
+}
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+#wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  color: rgba(5, 30, 172, 0.87);
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.3em;
+}
+
+
+html,body{
+	height: 100%;/*高さを100%にして描画エリアをとる*/
+}
+
+#particles-js{ 
+	position:fixed;/*描画固定*/
+	z-index:-1;/*描画を一番下に*/
+	width: 100%;
+	height: 100%;
+	background-color:#010424;/*背景色*/
+}
+
+#wrapper{
+	position: relative;/*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+	z-index: 1;/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+	width:100%;
+	height: 100%;
+}

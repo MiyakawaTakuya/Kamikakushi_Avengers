@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="32"
+   height="32"
+   viewBox="0 0 8.4666663 8.466667"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)"
+   sodipodi:docname="charaのコピー.svg"
+   inkscape:export-filename="/Users/miyakawatakuya/Desktop/Online Casino/img test/I.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs2">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath961">
+      <rect
+         style="opacity:0.0223463;fill:#f2f2f2;stroke-width:0.264583"
+         id="rect963"
+         width="7.7457557"
+         height="17.586809"
+         x="-0.028348191"
+         y="-0.047246981" />
+    </clipPath>
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask971">
+      <rect
+         style="fill:#f2f2f2;stroke-width:0.264583"
+         id="rect973"
+         width="8.413929"
+         height="8.4328279"
+         x="-0.028348191"
+         y="-0.047246981" />
+    </mask>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1459">
+      <rect
+         style="fill:#f2f2f2;stroke-width:0.264583"
+         id="rect1461"
+         width="3.8033853"
+         height="9.0950518"
+         x="2.4804688"
+         y="-0.66145831" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="61.935244"
+     inkscape:cy="-17.139171"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer4"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     units="px"
+     inkscape:window-width="1697"
+     inkscape:window-height="1286"
+     inkscape:window-x="892"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="back"
+     sodipodi:insensitive="true"
+     style="display:inline;opacity:1">
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/Online Casino/img test/floor.png"
+       xlink:href="floor.png"
+       width="25.4"
+       height="25.4"
+       preserveAspectRatio="none"
+       id="image103"
+       x="-0.028348191"
+       y="-0.047246981"
+       style="opacity:1" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="g967"
+     inkscape:label="back コピー"
+     style="display:none">
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/Online Casino/img test/floor.png"
+       xlink:href="floor.png"
+       width="25.4"
+       height="25.4"
+       preserveAspectRatio="none"
+       id="image965"
+       x="-0.028348191"
+       y="-0.047246981"
+       style="opacity:1"
+       mask="url(#mask971)"
+       transform="matrix(1.0140383,0,0,1.1059565,-0.03301073,8.4029065)" />
+  </g>
+  <g
+     inkscape:label="キャラ"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:none;opacity:1">
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/Online Casino/img test/charas-removebg-preview.png"
+       xlink:href="charas-removebg-preview.png"
+       width="127"
+       height="127"
+       preserveAspectRatio="none"
+       id="image89"
+       x="-86.40992"
+       y="-59.028954" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer13"
+     inkscape:label="キャラ 2"
+     style="display:none">
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/画像素材/gen_kd_m02.png"
+       xlink:href="../../%E7%94%BB%E5%83%8F%E7%B4%A0%E6%9D%90/gen_kd_m02.png"
+       y="-36.257591"
+       x="54.52272"
+       id="image1411"
+       preserveAspectRatio="none"
+       height="49.529999"
+       width="30.479998" />
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/画像素材/gen_kd_m04.png"
+       xlink:href="../../%E7%94%BB%E5%83%8F%E7%B4%A0%E6%9D%90/gen_kd_m04.png"
+       y="-1.1945803"
+       x="-43.904655"
+       id="image1425"
+       preserveAspectRatio="none"
+       height="49.529999"
+       width="30.479998" />
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/画像素材/gen_kd_f02.png"
+       xlink:href="../../%E7%94%BB%E5%83%8F%E7%B4%A0%E6%9D%90/gen_kd_f02.png"
+       y="-28.818302"
+       x="-40.482544"
+       id="image1439"
+       preserveAspectRatio="none"
+       height="44.125282"
+       width="27.15402" />
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/画像素材/gen_ya_m02.png"
+       xlink:href="../../%E7%94%BB%E5%83%8F%E7%B4%A0%E6%9D%90/gen_ya_m02.png"
+       transform="translate(-11.22532,-25.537603)"
+       clip-path="url(#clipPath1459)"
+       y="0.010150774"
+       x="-2.9335525"
+       id="image1453"
+       preserveAspectRatio="none"
+       height="34.006866"
+       width="19.091576" />
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/画像素材/gen_kd_f04.png"
+       xlink:href="../../%E7%94%BB%E5%83%8F%E7%B4%A0%E6%9D%90/gen_kd_f04.png"
+       y="5.0264459"
+       x="-32.05069"
+       id="image1473"
+       preserveAspectRatio="none"
+       height="44.577"
+       width="27.431997" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="キャラ 3"
+     style="display:inline">
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/画像素材/$PW-DogOsuwari01.png"
+       xlink:href="../../%E7%94%BB%E5%83%8F%E7%B4%A0%E6%9D%90/$PW-DogOsuwari01.png"
+       width="35.112961"
+       height="35.112961"
+       preserveAspectRatio="none"
+       id="image191"
+       x="-35.141308"
+       y="-9.7602081" />
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/画像素材/キャラクター切り出し/charas-removebg-preview.png"
+       xlink:href="../../%E7%94%BB%E5%83%8F%E7%B4%A0%E6%9D%90/%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC%E5%88%87%E3%82%8A%E5%87%BA%E3%81%97/charas-removebg-preview.png"
+       y="-59.032845"
+       x="-60.693672"
+       id="image230"
+       preserveAspectRatio="none"
+       height="67.73333"
+       width="127" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="机とか植栽とか"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/画像素材/Inside-Town-D.png"
+       xlink:href="../../%E7%94%BB%E5%83%8F%E7%B4%A0%E6%9D%90/Inside-Town-D.png"
+       width="130.048"
+       height="130.048"
+       preserveAspectRatio="none"
+       id="image118"
+       x="-24.365623"
+       y="-22.528147" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="g126"
+     inkscape:label="机とか植栽とか コピー"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/画像素材/Inside-Town-D.png"
+       xlink:href="../../%E7%94%BB%E5%83%8F%E7%B4%A0%E6%9D%90/Inside-Town-D.png"
+       width="117.04321"
+       height="117.04321"
+       preserveAspectRatio="none"
+       id="image124"
+       x="-14.088043"
+       y="-11.805506"
+       clip-path="url(#clipPath961)" />
+  </g>
+</svg>

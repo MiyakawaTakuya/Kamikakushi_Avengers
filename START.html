@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/START.css">
+
+  <title>Kamikakushi</title>
+  <link rel="stylesheet" type="text/css"
+    href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-4/css/reset.css">
+  <!-- この下にAPI KEY -->
+
+</head>
+
+<body class="body">
+  <div id="particles-js"></div>
+  <div id="wrapper" class="main">
+    <div class="input_container">
+      <div>
+        <p id="error_message_0" class="error_message"></p>
+      </div>
+      <div>
+        <h1 class="title">Kamikakushi</h1>
+        <h3 class="type">Plese type your name</h3>
+        <input type="text" id='input_name' placeholder="        Users Name ">
+        <input type="text" id="my_money" placeholder="       ¥ Your Money ">
+      </div>
+      <div class="btn">
+        <div class="signUp_btn">
+          <a id="sign_up">Game Start</a>
+        </div>
+        <div class="input_error">
+          <p id="error_comment_1"></p>
+          <p id="error_comment_2"></p>
+        </div>
+      </div>
+    </div>
+    <footer class="copyrights">
+      <p>copyrights 2021 G's Company All RIghts Reserved. Produced by The Avengers.</p>
+    </footer>
+    <audio id="A" preload="auto">
+      <source src="sound/input.mp3" type="audio/mp3">
+    </audio>
+    <audio id="B" preload="auto">
+      <source src="sound/cancel.mp3" type="audio/mp3">
+    </audio>
+    <audio id="C" preload="auto">
+      <source src="sound/start.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyB0cMp-Zr5iobXG5IVsg12YUAWvnPJ5ie8",
+        authDomain: "test-c9e2e.firebaseapp.com",
+        projectId: "test-c9e2e",
+        storageBucket: "test-c9e2e.appspot.com",
+        messagingSenderId: "915346520501",
+        appId: "1:915346520501:web:f93968b673c4e72ffe41fc"
+      };
+      firebase.initializeApp(firebaseConfig);
+      const user_info = firebase.firestore().collection('User');
+    </script>
+
+
+    <script>
+      $('#sign_up').on('click', function () {
+        $('#error_comment_1').text('');
+        $('#error_comment_2').text('');
+
+
+        const signUp_data = {
+          name: $('#input_name').val()
+        };
+        //現金の登録, 現金欄の値をnullに
+        const money = $('#my_money').val();
+        if (signUp_data.name != "" && money >= 10000) {
+          localStorage.setItem('hand_money', money);
+          //ファイヤーベースに名前を追加する
+          user_info.add(signUp_data);
+          //効果音を追加
+          audioC.play();
+          //この行で、URLと入力した名前を合体させてページ遷移
+          const time_out = function () {
+            window.location.href = 'intro.html?' + signUp_data.name;
+          };
+          setTimeout(time_out, 2500);
+        } else if (signUp_data.name == '') {
+          console.log(signUp_data.name);
+          $('#error_comment_1').text('Please type your name');
+          audioB.play();
+        } else if (money < 10000 || money == null) {
+          $('#error_comment_2').text('The lower limit is 10,000 yen.');
+          audioB.play();
+        }
+      });
+
+      //効果音
+      //効果音の対象を定義
+      const audioA = document.querySelector('#A');
+      const audioB = document.querySelector('#B');
+      const audioC = document.querySelector('#C');
+
+
+      //何かキーが押された時に発火
+      document.addEventListener("keydown", keyDownFunc);
+      //キーを打ち込むと音が鳴る
+      function keyDownFunc(event) {
+        let key_code = event.keyCode;
+        if (key_code) {
+          audioA.play();
+        };
+      }
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="START.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+
+</html>

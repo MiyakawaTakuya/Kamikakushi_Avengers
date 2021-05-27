@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/roulette.css">
+</head>
+
+<body>
+  <!-- ゲーム内のボタン -->
+  <!-- ログインボタン追加（好きにいじってください） -->
+  <div id="rogout" class="rogout_inside">ログアウト</div>
+  <div class="gameovermask displaynone" id="gameovermask"></div>
+  <div class="mask" id="mask"></div>
+  <div class="gameStart" id="gameStart">
+    <div>ゲームを始める</div>
+  </div>
+
+  <div class="info" id="info">
+    <div><a href="info.html">説明</a></div>
+  </div>
+  <!-- ゲームが始まる前のボタン -->
+  <!-- ログインボタン追加（好きにいじってください） -->
+  <div id="rogin">ログイン</div>
+  <!-- ゲームが始まる前のボタン -->
+  <!-- ログアウトボタン追加（好きにいじってください） -->
+  <div id="rogout" class="rogout_outside">ログアウト</div>
+
+  <div id="gameOver" class="gameOver displaynone">
+    <div>Game Over</div>
+  </div>
+
+
+  <div class="play_table smoke" id="play_table">
+    <div class="ruret_table" id="ruret_table">
+      <p>データ</p>
+      <ul id="pastDate" style="box-shadow: 0px 2px 19px 7px black;">
+        <!-- 追加データ -->
+      </ul>
+      <div class="line1">
+        <table class="zero">
+          <tr>
+            <th style="border: initial;">
+              <option id="tableNum_zero" value=0>0</option>
+            </th>
+          </tr>
+          </た>
+          <table class="ruret_table_nombers">
+            <tr>
+              <th class="backred">
+                <option id="tableNum_three" value=3>3</option>
+              </th>
+              <th class="backblack">
+                <option id="tableNum_six" value=6>6</option>
+              </th>
+              <th class="backred">
+                <option id="tableNum_nine" value=9>9</option>
+              </th>
+              <th class="backred">
+                <option id="tableNum_twelve" value=12>12</option>
+              </th>
+              <th class="backblack">
+                <option id="tableNum_three" value=15>15</option>
+              </th>
+              <th class="backred">
+                <option id="tableNum_three" value=18>18</option>
+              </th>
+              <th class="backred">
+                <option id="tableNum_three" value=21>21</option>
+              </th>
+              <th class="backblack">
+                <option id="tableNum_three" value=24>24</option>
+              </th>
+              <th class="backred">
+                <option id="tableNum_three" value=27>27</option>
+              </th>
+              <th class="backred">
+                <option id="tableNum_three" value=30>30</option>
+              </th>
+              <th class="backblack">
+                <option id="tableNum_three" value=33>33</option>
+              </th>
+              <th class="backred">
+                <option id="tableNum_three" value=36>36</option>
+              </th>
+            </tr>
+            <tr>
+              <th class="backblack">
+                <option id="tableNum_two" value=2>2</option>
+              </th>
+              <th class="backred">
+                <option id="tableNum_five" value=5>5</option>
+              </th>
+              <th class="backblack">
+                <option id="tableNum_eight" value="8">8</option>
+              </th>
+              <th class="backblack">
+                <option id="tableNum_eleven" value="11">11</option>
+              </th>
+              <th class="backred">
+                <option id="tableNum_three" value="14">14</option>
+              </th>
+              <th class="backblack">
+                <option id="tableNum_three" value="17">17</option>
+              </th>
+              <th class="backblack">
+                <option id="tableNum_three" value="20">20</option>
+              </th>
+              <th class="backred">
+                <option id="tableNum_three" value="23">23</option>
+              </th>
+              <th class="backblack">
+                <option id="tableNum_three" value="26">26</option>
+              </th>
+              <th class="backblack">
+                <option id="tableNum_three" value="29">29</option>
+              </th>
+              <th class="backred">
+                <option id="tableNum_three" value="32">32</option>
+              </th>
+              <th class="backblack">
+                <option id="tableNum_three" value="35">35</option>
+              </th>
+            </tr>
+            <tr>
+              <th class="backred">
+                <option id="tableNum_one" value="1">1</option>
+              </th>
+              <th class="backblack">
+                <option id="tableNum_four" value=4>4</option>
+              </th>
+              <th class="backred">
+                <option id="tableNum_seven" value="7">7</option>
+              </th>
+              <th class="backblack">
+                <option id="tableNum_ten" value="10">10</option>
+              </th>
+              <th class="backblack">
+                <option id="tableNum_three" value="13">13</option>
+              </th>
+              <th class="backred">
+                <option id="tableNum_three" value="16">16</option>
+              </th>
+              <th class="backred">
+                <option id="tableNum_three" value="19">19</option>
+              </th>
+              <th class="backblack">
+                <option id="tableNum_three" value="22">22</option>
+              </th>
+              <th class="backred">
+                <option id="tableNum_three" value="25">25</option>
+              </th>
+              <th class="backblack">
+                <option id="tableNum_three" value="28">28</option>
+              </th>
+              <th class="backblack">
+                <option id="tableNum_three" value="31">31</option>
+              </th>
+              <th class="backred">
+                <option id="tableNum_three" value="34">34</option>
+              </th>
+            </tr>
+          </table>
+          <table class="ruret_table_options1">
+            <tr>
+              <th style="border-radius: 0 40px 0 0;">
+                <option id="optionline1" value="up">2to1</option>
+              </th>
+              <th>
+                <option id="optionline2" value="center">2to1</option>
+              </th>
+              <th style="border-radius: 0 0 40px 0;">
+                <option id="optionline3" value="bottom">2to1</option>
+              </th>
+
+            </tr>
+          </table>
+      </div>
+      <div class="line2">
+        <table class="ruret_table_options2">
+          <tr>
+            <!-- ここから -->
+            <th>
+              <option id="optionST12_1" value="1st12">1st12</option>
+            </th>
+            <th>
+              <option id="optionST12_2" value="2st12">2nd12</option>
+            </th>
+            <th>
+              <option id="optionST12_3" value="3st12">3rd12</option>
+            </th>
+          </tr>
+        </table>
+        <table class="ruret_table_options3">
+          <tr>
+            <th style="border-radius: 0 0 0 40px;">
+              <option id="optionHalfNum_left" value="left">1-18</option>
+            </th>
+            <th>
+              <option id="option1or2_EVENNum" value="EVEN">EVEN</option>
+            </th>
+            <th class="backbred">
+              <option id="optionColor_RED" value="RED">RED</option>
+            </th>
+            <th class="backblack">
+              <option id="optionColor_BLACK" value="BLACK">BLACK</option>
+            </th>
+            <th>
+              <option id="option1or2_ODDNum" value="ODD">ODD</option>
+            </th>
+            <th style="border-radius: 0 0 40px 0;">
+              <option id="optionHalfNum_right" value="right">19-36</option>
+            </th>
+
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="randomNum">
+      <img id="spin_img" class="spin" src="./img/ルーレット.png">
+      <p id="randomNum"></p>
+    </div>
+
+  </div>
+
+  <div class="select_chip">
+    <div><img id="img_place" src=""></div>
+
+  </div>
+
+
+  <div class="player_action">
+    <div class="lone">
+      <p id="danger">借金</p>
+      <p id="pey_off">借金返済</p>
+    </div>
+    <option id="chips1" value=100>1</option>
+    <option id="chips5" value=500>5</option>
+    <option id="chips10" value=1000>10</option>
+    <option id="chips25" value=2500>25</option>
+    <option id="chips50" value=5000>50</option>
+
+    <option id="chipsall" value="all">オールイン</option>
+    <p class="start smoke" id="start">回す</p>
+  </div>
+
+  <div class="sub_option">
+    <div class="playtime">
+      <p>プレイ時間</p>
+      <p id="timer" style="margin-left: 20px;"></p>
+    </div>
+    <div class="cash">
+      <p>現金 ¥</p>
+      <p style="margin-left: 20px;" id="chash"></p>
+    </div>
+    <div class="plus">
+      <p>勝利 ¥</p>
+      <p style="margin-left: 20px;" id="win"></p>
+    </div>
+    <div class="minus">
+      <p>負債 ¥</p>
+      <p style="margin-left: 20px;" id="lonetext"></p>
+    </div>
+  </div>
+
+  <div class="colect displaynone" id="colect">
+    <div id="colecttext"></div>
+  </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/roulette.js"></script>
+</body>
+
+</html>

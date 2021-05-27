@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Kamikakushi</title>
+    <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+    <link rel="stylesheet" type="text/css"
+        href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-4/css/reset.css">
+    <script src="/js/message_view.js" type="text/javascript"></script>
+    <script>
+    </script>
+</head>
+
+<body class="body">
+    <div id="particles-js"></div>
+    <div id="wrapper" class="main">
+        <canvas id="canvas"></canvas>
+        <!--/wrapper-->
+    </div>
+    <!-- <div>
+        <span id="name"></span>さんが今いるこの場所の天気は、
+    </div>
+
+    <div>
+        今日は<span id="w_1"></span>
+        、気温は<span id="t_1"></span>度
+    </div>
+
+
+    <div>
+        明日は<span id="w_2"></span>
+        、気温は<span id="t_2"></span>度
+    </div>
+
+
+    <div>
+        明後日は<span id="w_3"></span>
+        、気温は<span id="t_3"></span>度
+    </div>
+
+    <div>
+        3日後は<span id="w_4"></span>
+        、気温は<span id="t_4"></span>度
+    </div>
+
+    <div>
+        4日後は<span id="w_5"></span>
+        、気温は<span id="t_5"></span>度
+    </div>
+
+    <div>
+        5日後は<span id="w_6"></span>
+        、気温は<span id="t_6"></span>度
+    </div> -->
+    <div class="messageView" id="default">
+        <div class="mv-contents">
+            <p class="mv-name"></p>
+            <div class="mv-comment">
+                <p class="val"></p>
+                <p class="pointer"></p>
+            </div>
+    <audio id="A" preload="auto">
+        <source src="sound/Home Sweet HomeFFV OSV.mp3" type="audio/mp3">
+    </audio>
+    <audio id="B" preload="auto">
+        <source src="sound/intro_enter.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        // 'use strict';
+        //     //ゲームのオブジェクトを640×480サイズで作る
+        //     let game = new Game(640, 480);
+        //     //ラベルオブジェクトを作る
+        //     let label = new Label('こんにちは');
+        //     //add()を使って、ゲームにラベルを表示
+        //     game.add(label, 20, 40);
+        //     //ゲームスタート
+        //     game.start();
+    </script>
+    <!-- お天気API -->
+    <script>
+        $(document).ready(function () {
+            'use strict'
+            const APIKEY = "99e9fe4e103779f3e7f4906e498ef3b7";
+            //翌日9時のデータの場所を割り出す
+            const date = new Date();
+            const nowHour = date.getHours();
+            const whichTomorrowWeatherData = Math.floor((24 - nowHour + 9) / 3);
+            const whichDayAfterTomorrowWeatherData = Math.floor((24 - nowHour + 33) / 3);
+            const threeDaysLaterData = Math.floor((24 - nowHour + 57) / 3);
+            const fourDaysLaterData = Math.floor((24 - nowHour + 81) / 3);
+            const fiveDaysLaterData = Math.floor((24 - nowHour + 105) / 3);
+            let user_name = location.search.substring(1);
+            //現在位置の取得ができるかどうか
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(success, error);
+                // 現在位置の取得に成功した場合
+                function success(position) {
+                    const positionData = position.coords;
+                    //緯度経度の取得と表示
+                    const lat = positionData.latitude;
+                    const lon = positionData.longitude;
+                    $('#location').text('現在の位置（' + Math.floor(lat * 100) / 100 + ',' + Math.floor(lon * 100) / 100 + ')');
+                    //現在の天気データを呼び出し
+                    $.ajax({
+                        url: "http://api.openweathermap.org/data/2.5/weather",
+                        dataType: "jsonp",
+                        data: "lat=" + lat + "&lon=" + lon + "&appid=" + APIKEY,
+                        //天気データ呼び出し成功時の挙動
+                        success: function (data) {
+                            if (data.weather[0].main === "Clear") {
+                                $('#w_1').text("晴れ");
+                            } else if (data.weather[0].main === "Rain") {
+                                $('#w_1').text("雨");
+                            } else if (data.weather[0].main === "Clouds") {
+                                $('#w_1').text("くもり");
+                            } else if (data.weather[0].main === "Snow") {
+                                $('#w_1').text("雪");
+                            }
+                            //各データの表示
+                            $('#t_1').text(Math.floor((data.main.temp - 273.15) * 10) / 10);
+                        }
+                    });
+                    //明日の天気データを呼び出し
+                    $.ajax({
+                        url: "http://api.openweathermap.org/data/2.5/forecast",
+                        dataType: "jsonp",
+                        data: "lat=" + lat + "&lon=" + lon + "&appid=" + APIKEY,
+                        //天気データ呼び出し成功時の挙動
+                        success: function (data) {
+                            //翌日9時の天気データ
+                            const targetData1 = data.list[whichTomorrowWeatherData];
+                            const targetData2 = data.list[whichDayAfterTomorrowWeatherData];
+                            const targetData3 = data.list[threeDaysLaterData];
+                            const targetData4 = data.list[fourDaysLaterData];
+                            const targetData5 = data.list[fiveDaysLaterData];
+                            //晴れとか曇りとかを表示させる処理------------------------------------------------------------------------------
+                            $('#name').text(user_name);
+                            if (targetData1.weather[0].main === "Clear") {
+                                $('#w_2').text("晴れ");
+                            } else if (targetData1.weather[0].main === "Rain") {
+                                $('#w_2').text("雨");
+                            } else if (targetData1.weather[0].main === "Clouds") {
+                                $('#w_2').text("くもり");
+                            } else if (targetData1.weather[0].main === "Snow") {
+                                $('#w_2').text("雪");
+                            }
+                            if (targetData2.weather[0].main === "Clear") {
+                                $('#w_3').text("晴れ");
+                            } else if (targetData2.weather[0].main === "Rain") {
+                                $('#w_3').text("雨");
+                            } else if (targetData2.weather[0].main === "Clouds") {
+                                $('#w_3').text("くもり");
+                            } else if (targetData2.weather[0].main === "Snow") {
+                                $('#w_3').text("雪");
+                            }
+                            if (targetData3.weather[0].main === "Clear") {
+                                $('#w_4').text("晴れ");
+                            } else if (targetData3.weather[0].main === "Rain") {
+                                $('#w_4').text("雨");
+                            } else if (targetData3.weather[0].main === "Clouds") {
+                                $('#w_4').text("くもり");
+                            } else if (targetData3.weather[0].main === "Snow") {
+                                $('#w_4').text("雪");
+                            }
+                            if (targetData4.weather[0].main === "Clear") {
+                                $('#w_5').text("晴れ");
+                            } else if (targetData4.weather[0].main === "Rain") {
+                                $('#w_5').text("雨");
+                            } else if (targetData4.weather[0].main === "Clouds") {
+                                $('#w_5').text("くもり");
+                            } else if (targetData4.weather[0].main === "Snow") {
+                                $('#w_5').text("雪");
+                            }
+                            if (targetData5.weather[0].main === "Clear") {
+                                $('#w_6').text("晴れ");
+                            } else if (targetData5.weather[0].main === "Rain") {
+                                $('#w_6').text("雨");
+                            } else if (targetData5.weather[0].main === "Clouds") {
+                                $('#w_6').text("くもり");
+                            } else if (targetData5.weather[0].main === "Snow") {
+                                $('#w_6').text("雪");
+                            }
+                            ///気温を表示する処理------------------------------------------------------------------------------
+                            $('#t_2').text(Math.floor((targetData1.main.temp - 273.15) * 10) / 10);
+                            $('#t_3').text(Math.floor((targetData2.main.temp - 273.15) * 10) / 10);
+                            $('#t_4').text(Math.floor((targetData3.main.temp - 273.15) * 10) / 10);
+                            $('#t_5').text(Math.floor((targetData4.main.temp - 273.15) * 10) / 10);
+                            $('#t_6').text(Math.floor((targetData5.main.temp - 273.15) * 10) / 10);
+                            //-----------------------------------------------------------------------------------------------
+                        }
+                    });
+                }
+                //現在位置の取得に失敗した場合
+                function error(error) {
+                }
+                //現在位置がそもそも取得できない場合
+            } else {
+            }
+        }());
+    </script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-4/js/5-4.js"></script>
+    <script src="field.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>

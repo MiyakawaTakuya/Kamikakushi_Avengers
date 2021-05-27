@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="32"
+   height="64"
+   viewBox="0 0 8.4666665 16.933334"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)"
+   sodipodi:docname="ドア.svg"
+   inkscape:export-filename="/Users/miyakawatakuya/Desktop/Online Casino/img test/door.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs2">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1040">
+      <rect
+         style="fill:#006680;stroke-width:0.264583"
+         id="rect1042"
+         width="8.5860329"
+         height="16.971615"
+         x="-0.03340869"
+         y="-0.03340869" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1072">
+      <rect
+         style="fill:#006680;stroke-width:0.264583"
+         id="rect1074"
+         width="25.089928"
+         height="17.506155"
+         x="0"
+         y="-0.03340869" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1123">
+      <rect
+         style="fill:#006680;stroke-width:0.264583"
+         id="rect1125"
+         width="8.4241438"
+         height="8.4901953"
+         x="-0.037797417"
+         y="-0.037797518" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1123-8">
+      <rect
+         style="fill:#006680;stroke-width:0.264583"
+         id="rect1125-7"
+         width="8.4241438"
+         height="8.4901953"
+         x="-0.037797417"
+         y="-0.037797518" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1123-8-3">
+      <rect
+         style="fill:#006680;stroke-width:0.264583"
+         id="rect1125-7-7"
+         width="8.4241438"
+         height="8.4901953"
+         x="-0.037797417"
+         y="-0.037797518" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1123-4">
+      <rect
+         style="fill:#006680;stroke-width:0.264583"
+         id="rect1125-71"
+         width="8.4241438"
+         height="8.4901953"
+         x="-0.037797417"
+         y="-0.037797518" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1123-8-9">
+      <rect
+         style="fill:#006680;stroke-width:0.264583"
+         id="rect1125-7-1"
+         width="8.4241438"
+         height="8.4901953"
+         x="-0.037797417"
+         y="-0.037797518" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1123-8-3-1">
+      <rect
+         style="fill:#006680;stroke-width:0.264583"
+         id="rect1125-7-7-8"
+         width="8.4241438"
+         height="8.4901953"
+         x="-0.037797417"
+         y="-0.037797518" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1250">
+      <rect
+         style="fill:#006680;stroke-width:0.264583"
+         id="rect1252"
+         width="7.961123"
+         height="4.984561"
+         x="0.66145831"
+         y="-0.75595242" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1262">
+      <rect
+         style="fill:#006680;stroke-width:0.109576"
+         id="rect1264"
+         width="6.9060841"
+         height="5.3381886"
+         x="0.75240928"
+         y="-0.83270794" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1276">
+      <rect
+         style="fill:#006680;stroke-width:0.109576"
+         id="rect1278"
+         width="6.9106197"
+         height="0.49447906"
+         x="0.75240928"
+         y="-0.83270794" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1304">
+      <rect
+         style="fill:#006680;stroke-width:0.264583"
+         id="rect1306"
+         width="0.9921875"
+         height="6.5200891"
+         x="16.347469"
+         y="1.3323661" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="10.314725"
+     inkscape:cy="63.711159"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer11"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     units="px"
+     inkscape:window-width="1296"
+     inkscape:window-height="1302"
+     inkscape:window-x="725"
+     inkscape:window-y="35"
+     inkscape:window-maximized="0">
+    <sodipodi:guide
+       position="-33.074603,8.4809349"
+       orientation="0,-1"
+       id="guide1044" />
+    <sodipodi:guide
+       position="8.504464,7.7815851"
+       orientation="1,0"
+       id="guide1254" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="床"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:none;opacity:1"
+     sodipodi:insensitive="true">
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/Online Casino/img test/floor.png"
+       xlink:href="floor.png"
+       width="25.4"
+       height="25.4"
+       preserveAspectRatio="none"
+       id="image1117-0-0"
+       x="-0.037797417"
+       y="-0.037797518"
+       clip-path="url(#clipPath1123-8-3)"
+       style="display:inline;opacity:1"
+       transform="translate(17.096337,0.02362351)" />
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/Online Casino/img test/floor.png"
+       xlink:href="floor.png"
+       width="25.4"
+       height="25.4"
+       preserveAspectRatio="none"
+       id="image1117-0-0-0"
+       x="-0.037797417"
+       y="-0.037797518"
+       clip-path="url(#clipPath1123-8-3-1)"
+       style="display:inline;opacity:1"
+       transform="translate(17.096337,8.5138184)" />
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/Online Casino/img test/floor.png"
+       xlink:href="floor.png"
+       width="25.4"
+       height="25.4"
+       preserveAspectRatio="none"
+       id="image1117-0"
+       x="-0.037797417"
+       y="-0.037797518"
+       clip-path="url(#clipPath1123-8)"
+       style="display:inline;opacity:1"
+       transform="matrix(1.0868423,0,0,1,8.3096891,0.02362351)" />
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/Online Casino/img test/floor.png"
+       xlink:href="floor.png"
+       width="25.4"
+       height="25.4"
+       preserveAspectRatio="none"
+       id="image1117-0-2"
+       x="-0.037797417"
+       y="-0.037797518"
+       clip-path="url(#clipPath1123-8-9)"
+       style="display:inline;opacity:1"
+       transform="matrix(1.0868423,0,0,1,8.309689,8.5138184)" />
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/Online Casino/img test/floor.png"
+       xlink:href="floor.png"
+       transform="matrix(1.0140213,0,0,1,5.2996943e-4,0)"
+       clip-path="url(#clipPath1123)"
+       y="-0.037797518"
+       x="-0.037797417"
+       id="image1117"
+       preserveAspectRatio="none"
+       height="25.4"
+       width="25.4" />
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/Online Casino/img test/floor.png"
+       xlink:href="floor.png"
+       width="25.4"
+       height="25.4"
+       preserveAspectRatio="none"
+       id="image1117-8"
+       x="-0.037797417"
+       y="-0.037797518"
+       clip-path="url(#clipPath1123-4)"
+       style="display:inline;opacity:1"
+       transform="matrix(1.0112171,0,0,1,4.2397555e-4,8.4901949)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="カーテン"
+     style="display:none;opacity:1"
+     sodipodi:insensitive="true">
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/画像素材/ST-Hospital-I01.png"
+       xlink:href="../../%E7%94%BB%E5%83%8F%E7%B4%A0%E6%9D%90/ST-Hospital-I01.png"
+       transform="matrix(3.6832548,0,0,1.5829384,-2.78417,1.3204997)"
+       clip-path="url(#clipPath1262)"
+       y="-26.316704"
+       x="-12.065009"
+       id="image1244"
+       preserveAspectRatio="none"
+       height="185.59999"
+       width="25.6" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer9"
+     inkscape:label="オレンジカーテン 2"
+     style="display:none;opacity:0.77095"
+     sodipodi:insensitive="true">
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/画像素材/カーテンオレンジ.png"
+       xlink:href="../../%E7%94%BB%E5%83%8F%E7%B4%A0%E6%9D%90/%E3%82%AB%E3%83%BC%E3%83%86%E3%83%B3%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8.png"
+       y="-0.014267805"
+       x="0.0094496179"
+       id="image1291"
+       preserveAspectRatio="none"
+       height="8.4666662"
+       width="25.4" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="g1298"
+     inkscape:label="オレンジカーテン 2 tate"
+     style="display:none;opacity:0.77095"
+     sodipodi:insensitive="true">
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/画像素材/カーテンオレンジ.png"
+       xlink:href="../../%E7%94%BB%E5%83%8F%E7%B4%A0%E6%9D%90/%E3%82%AB%E3%83%BC%E3%83%86%E3%83%B3%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8.png"
+       transform="matrix(1,0,0,1.403264,-8.8351933,-1.8935766)"
+       clip-path="url(#clipPath1304)"
+       y="-0.014267805"
+       x="0.0094496179"
+       id="image1296"
+       preserveAspectRatio="none"
+       height="8.4666662"
+       width="25.4" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer12"
+     inkscape:label="kabe"
+     sodipodi:insensitive="true">
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/Online Casino/img test/wall.png"
+       xlink:href="wall.png"
+       y="-0.014268676"
+       x="0.037796907"
+       id="image1354"
+       preserveAspectRatio="none"
+       height="8.4666672"
+       width="8.4666672" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer11"
+     inkscape:label="door"
+     style="opacity:1">
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/画像素材/Door.png"
+       xlink:href="../../%E7%94%BB%E5%83%8F%E7%B4%A0%E6%9D%90/Door.png"
+       y="0.6850816"
+       x="-17.149067"
+       id="image1337"
+       preserveAspectRatio="none"
+       height="65.024002"
+       width="25.65353" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="g1274"
+     inkscape:label="オレンジカーテン レール"
+     style="display:none;opacity:1"
+     sodipodi:insensitive="true">
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/画像素材/ST-Hospital-I01.png"
+       xlink:href="../../%E7%94%BB%E5%83%8F%E7%B4%A0%E6%9D%90/ST-Hospital-I01.png"
+       transform="matrix(3.6832548,0,0,1.5829384,-2.78417,1.3204997)"
+       clip-path="url(#clipPath1276)"
+       y="-26.316704"
+       x="-12.065009"
+       id="image1270"
+       preserveAspectRatio="none"
+       height="185.59999"
+       width="25.6" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer8"
+     inkscape:label="オレンジカーテン 1"
+     style="display:inline" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="オフィス素材一式"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/画像素材/ST-Office-I01.png"
+       xlink:href="../../%E7%94%BB%E5%83%8F%E7%B4%A0%E6%9D%90/ST-Office-I01.png"
+       width="25.6"
+       height="185.59999"
+       preserveAspectRatio="none"
+       id="image1003"
+       x="1.8465772"
+       y="-86.941368"
+       style="display:inline;opacity:1" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="デスク"
+     style="display:none;opacity:0.829609">
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/画像素材/ST-Office-I01.png"
+       xlink:href="../../%E7%94%BB%E5%83%8F%E7%B4%A0%E6%9D%90/ST-Office-I01.png"
+       y="-339.05411"
+       x="-8.319005"
+       id="image1018"
+       preserveAspectRatio="none"
+       height="485.07602"
+       width="66.907043" />
+    <rect
+       style="fill:#006680;stroke-width:0.264583"
+       id="rect1064"
+       width="25.089928"
+       height="17.506155"
+       x="0"
+       y="-0.03340869" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="g1070"
+     inkscape:label="デスク 横"
+     style="display:none;opacity:0.829609">
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/画像素材/ST-Office-I01.png"
+       xlink:href="../../%E7%94%BB%E5%83%8F%E7%B4%A0%E6%9D%90/ST-Office-I01.png"
+       transform="translate(0.16704345,-0.03340869)"
+       clip-path="url(#clipPath1072)"
+       y="-339.05411"
+       x="-8.319005"
+       id="image1066"
+       preserveAspectRatio="none"
+       height="485.07602"
+       width="66.907043" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="デスク 横　透明"
+     style="display:none">
+    <g
+       inkscape:groupmode="layer"
+       id="layer2"
+       inkscape:label="レール"
+       style="display:none" />
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/Online Casino/img test/desk_yoko.png"
+       xlink:href="desk_yoko.png"
+       y="0.037798021"
+       x="0.05669662"
+       id="image1087"
+       preserveAspectRatio="none"
+       height="16.933332"
+       width="25.4" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="g1026"
+     inkscape:label="コーヒー"
+     sodipodi:insensitive="true"
+     style="display:none">
+    <image
+       sodipodi:absref="/Users/miyakawatakuya/Desktop/画像素材/ST-Office-I01.png"
+       xlink:href="../../%E7%94%BB%E5%83%8F%E7%B4%A0%E6%9D%90/ST-Office-I01.png"
+       transform="matrix(-1,0,0,1,8.5192155,0)"
+       clip-path="url(#clipPath1040)"
+       y="-197.56168"
+       x="-18.04266"
+       id="image1024"
+       preserveAspectRatio="none"
+       height="518.43365"
+       width="71.508095" />
+  </g>
+</svg>
