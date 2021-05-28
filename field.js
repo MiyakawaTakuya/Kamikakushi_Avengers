@@ -1,15 +1,15 @@
 //会話イベント
-document.addEventListener("DOMContentLoaded", function () {
-    var message = new MessageViewer({
-        "data": [{
-            "name": "生方 すみれ",
-            "message": "はじめまして！",
-        },
-        {
-            "message": "こんにちは！"
-        }]
-    });
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//     var message = new MessageViewer({
+//         "data": [{
+//             "name": "生方 すみれ",
+//             "message": "はじめまして！",
+//         },
+//         {
+//             "message": "こんにちは！"
+//         }]
+//     });
+// });
 
 
 //canvasの設定
@@ -253,9 +253,9 @@ function main() {
             var y = rico.y / 32;
             y--;                  //主人公の上へ座標の変数だけ切り替える
             if (map[y][x] === 57) {  //主人公の上にタロさんがいたら
-                rico.move = 32;
-                key.push = 'left';
-                // alert("天気教えねえょ");
+                // rico.move = 32;
+                alert(今週の天気を教えるよ);
+            
             } else { y++; };
         };
     }

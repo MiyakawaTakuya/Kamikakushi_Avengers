@@ -322,10 +322,25 @@ function main() {
             var y = rico.y / 32;
             y++;                  //主人公の下へ座標だけ切り替える
             if (map[y][x] === 98) {   //主人公の下に入り口部分のパーツがあった場合
-                map[19][17] = 99;   //主人公が出ようとしたら壁で塞がる 神隠し
+                map[19][17] = 99;  //主人公が出ようとしたら壁で塞がる 神隠し
+                audioB.play();   //岩の音
+                const time_out = function () {
+                    alert("なんと.....出口が岩で塞がれてしまった！！");
+                    //!
+
+                };
+                setTimeout(time_out, 2000);
+                audioC.play();
+                window.location.href = 'GAMEOVER.html?' + signUp_data.name;
+                // const time_out = function 
+                // };
+                // setTimeout(time_out, 4000);
             } else { y--; };
         }
     };
+
+    
+
 
 
     //////////////////////////////////////////
@@ -406,6 +421,32 @@ function keyupfunc(event) {
     if (key_code === 39) key.right = false;
     if (key_code === 40) key.down = false;
 }
+
+//音関連
+const audioA = document.querySelector('#A');
+const audioB = document.querySelector('#B');
+const audioC = document.querySelector('#C');
+
+//画面のどこかをクリックするとバックミュージックが流れ始める
+//ほんとはsetTimeoutで自然と音楽を流したいがChromeのブラウザ設定で流れないことがあるので応急処置
+document.addEventListener('click', function () {
+    audioA.play();
+})
+//音楽が初回のクリック時に再生されない時のための予備発火ポイント
+//スペースキーを押すとバックミュージックが流れ始める
+document.addEventListener("keydown", keyDownFunc);
+function keyDownFunc(event) {
+    let key_code = event.keyCode;
+    if (key_code === 32) {
+        audioA.play();
+    };
+}
+
+audioA.addEventListener("ended", function () {
+    audioA.currentTime = 0;
+    audioA.play();
+}, false);
+
 
 //バックグラウンドの装飾系
 //背景の幾何学JS
